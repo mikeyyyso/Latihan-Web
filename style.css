@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    font: 16px/28px arial, sans-serif;
+    background-color: #eaeaea;
+    color: #333;
+    background-image: url(img/pattern.jpg);
+}
+
+.twitter{
+    background-image: url(img/twitter.png);
+    display: inline-block;
+    width: 265px;
+    height: 200px;
+    text-indent: -9999px;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+}
+
+.topbar{
+    height: 40px;
+    background-color: lightskyblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 30;
+    border-bottom: 5px solid salmon;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.topbar .search{
+    position: absolute;
+    left: 200px;
+}
+
+.container{
+    width: 960px;
+    margin: 80px auto;
+    background-color: #fff;
+    position: relative;
+}
+
+.header{
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.header .judul{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.header ul li{
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.header a{
+    color: salmon;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.header a:hover{
+    background-color: lightskyblue;
+    color: white;
+}
+
+.hero{
+    height: 320px;
+    background-image: url(img/gambarb.jpg);
+    background-position: 15px 0; 
+    /* untuk mengatur posisi gambar, punya 2 nilai, nilai pertama untuk mengatur secara horizontal, dan kedua untuk vertikal */
+    border-top: 5px solid salmon;
+}
+
+.main{
+    width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.main .penulis{
+    font-size: 10px;
+    margin-left: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main p{
+    margin-bottom: 15px;
+    font: 15px serif;
+    text-transform: capitalize;
+}
+
+.main .penulis a{
+    color: salmon;
+    text-decoration: none;
+}
+
+.main{
+    float: left;
+}
+
+.footer{
+    background-color: #333;
+    padding: 10px;
+}
+
+.footer .copy{
+    color: #eaeaea;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* sidebar */
+.sidebar{
+    width: 300px;
+    height: 300px;
+    float: right;
+    padding: 20px;
+    overflow: auto;
+}
+
+.sidebar h3{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.sidebar img{
+    float: left;
+    padding-right: 10px;
+}
+
+.sidebar p{
+    font: 12px/16px arial;
+}
+
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
